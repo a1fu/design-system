@@ -1,0 +1,22 @@
+@import "../tokens/spacing.scss";
+
+//iterations
+$num: 4;
+
+@for $i from 0 through $num {
+    .m_#{$i} { margin: $space * $i; }
+    .mt_#{$i} { margin-top: $space * $i; }
+    .mb_#{$i} { margin-bottom: $space * $i; }
+    .ml_#{$i} { margin-left: $space * $i; }
+    .mr_#{$i} { margin-right: $space * $i; }
+    .mx_#{$i} { margin-left: $space * $i; margin-right: $space * $i; }
+    .my_#{$i} { margin-top: $space * $i; margin-bottom: $space * $i; }
+
+    .p_#{$i} { padding: $space * $i; }
+    .pt_#{$i} { padding-top: $space * $i; }
+    .pb_#{$i} { padding-bottom: $space * $i; }
+    .pl_#{$i} { padding-left: $space * $i; }
+    .pr_#{$i} { padding-right: $space * $i; }
+    .px_#{$i} { padding-left: $space * $i; padding-right: $space * $i; }
+    .py_#{$i} { padding-top: $space * $i; padding-bottom: $space * $i; }
+}

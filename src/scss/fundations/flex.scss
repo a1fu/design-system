@@ -1,0 +1,88 @@
+@import '../tokens/grid.scss';
+
+.display_flex{ display: flex }
+.flex_column { flex-direction: column }
+.flex_column_reverse { flex-direction: column-reverse }
+.flex_wrap { flex-wrap: wrap }
+.flex_wrap_reverse { flex-wrap: wrap-reverse }
+.flex_nowrap { flex-wrap: nowrap!important }
+.flex_fill { flex: 1 1 auto }
+.flex_grow_1 { flex-grow: 1!important }
+
+
+//order
+@for $i from 0 through $grid_cols {
+    .order_#{$i} { order: #{$i} }
+    //order md
+    @media (min-width: $grid_width_md) {
+        .order_#{$i}_md { order: #{$i} }
+    }
+    //order lg
+    @media (min-width: $grid_width_lg) {
+        .order_#{$i}_lg { order: #{$i} }
+    }
+    //order xl
+    @media (min-width: $grid_width_xl) {
+        .order_#{$i}_xl { order: #{$i} }
+    }
+}
+
+
+//margin
+.margin_x_auto{ margin-right: auto; margin-left: auto }
+.margin_y_auto{ margin-top: auto; margin-bottom: auto }
+.margin_right_auto{ margin-right: auto }
+.margin_left_auto{ margin-left: auto }
+.margin_top_auto{ margin-top: auto }
+.margin_bottom_auto{ margin-bottom: auto }
+
+//items
+.align_items_start{ align-items: flex-start }
+.align_items_center{ align-items: center }
+.align_items_end{ align-items: flex-end }
+.align_items_baseline{ align-items: baseline }
+.align_items_stretch{ align-items: stretch }
+
+// .justify_items_start{ justify-items: flex-start }
+// .justify_items_center{ justify-items: center }
+// .justify_items_end{ justify-items: flex-end }
+// .justify_items_baseline{ justify-items: baseline }
+// .justify_items_stretch{ justify-items: stretch }
+
+//self
+.align_self_start{ align-self: flex-start }
+.align_self_center{ align-self: center }
+.align_self_end{ align-self: flex-end }
+.align_self_baseline{ align-self: baseline }
+.align_self_stretch{ align-self: stretch }
+
+.justify_self_start{ justify-self: flex-start }
+.justify_self_center{ justify-self: center }
+.justify_self_end{ justify-self: flex-end }
+.justify_self_baseline{ justify-self: baseline }
+.justify_self_stretch{ justify-self: stretch }
+
+//content
+.align_content_start{ align-content: flex-start }
+.align_content_center{ align-content: center }
+.align_content_end{ align-content: flex-end }
+.align_content_around{ align-content: space-around }
+.align_content_between{ align-content: space-between }
+.align_content_stretch{ align-content: stretch;}
+
+.justify_content_start{ justify-content: flex-start }
+.justify_content_center{ justify-content: center }
+.justify_content_end{ justify-content: flex-end }
+.justify_content_around{ justify-content: space-around }
+.justify_content_between{ justify-content: space-between }
+.justify_content_stretch{ justify-content: stretch }
+
+.bx{
+    height: 10rem;
+}
+
+.bx2{
+    display: block;
+    width: 5rem;
+    height: 1rem;
+}

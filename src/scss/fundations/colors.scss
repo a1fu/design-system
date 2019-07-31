@@ -1,0 +1,39 @@
+@import "../tokens/colors.scss";
+
+@mixin text($color){
+  color: $color;
+}
+
+@mixin background($color){
+  background-color: $color;
+}
+
+//text brand colors
+.clr_primary_brand{ @include text($color_primary_brand) }
+.clr_secundary_brand{ @include text($color_secundary_brand) }
+
+.clr_primary{ @include text($color_primary) }
+.clr_secundary{ @include text($color_secundary) }
+.clr_success{ @include text($color_success) }
+.clr_danger{ @include text($color_danger) }
+.clr_warning{ @include text($color_warning) }
+.clr_info{ @include text($color_info) }
+
+.clr_white{ @include text($color_white) }
+.clr_black{ @include text($color_black) }
+.clr_light{ @include text($color_light) }
+
+//background brand colors
+.bg_primary_brand{ @include background($color_primary_brand) }
+.bg_secundary_brand{ @include background($color_secundary_brand) }
+
+.bg_primary{ @include background($color_primary) }
+.bg_secundary{ @include background($color_secundary) }
+.bg_success{ @include background($color_success) }
+.bg_danger{ @include background($color_danger) }
+.bg_warning{ @include background($color_warning) }
+.bg_info{ @include background($color_info) }
+
+.bg_white{ @include background($color_white) }
+.bg_black{ @include background($color_black) }
+.bg_light{ @include background($color_light) }

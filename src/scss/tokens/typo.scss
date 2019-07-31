@@ -1,0 +1,38 @@
+//    |                        
+//    __|  |   |  __ \    _ \  
+//    |    |   |  |   |  (   | 
+//   \__| \__, |  .__/  \___/  
+//        ____/  _|           
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i&display=swap');
+$typo_font_primary: 'Roboto', sans-serif;
+
+//typos
+$typo_h1: 2rem;
+$typo_h2: 1.8rem;
+$typo_h3: 1.6rem;
+$typo_h4: 1.4rem;
+$typo_h5: 1.2rem;
+$typo_h6: 1rem;
+$typo_p: 1rem;
+$typo_small: .8rem;
+
+//typo weight
+$typo_bold: 700;
+$typo_normal: 400;
+$typo_light: 300;
+$typo_italic: italic;
+
+//typo transform
+$typo_lowercase: lowercase;
+$typo_uppercase: uppercase;
+$typo_capitalize: capitalize;
+
+//typo align
+$typo_left: left;
+$typo_right: right;
+$typo_center: center;
+$typo_justify: justify;
+
+//typo decoration
+$typo_none: none;

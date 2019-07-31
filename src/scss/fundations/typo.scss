@@ -1,0 +1,68 @@
+@import "../tokens/typo.scss";
+@import "../tokens/colors.scss";
+@import "../tokens/spacing.scss";
+
+@mixin weight($weight) {
+    font-weight: $weight;
+}
+
+@mixin italic($italic) {
+    font-style: $italic;
+}
+
+@mixin transform($transform) {
+    text-transform: $transform;
+}
+
+@mixin align($align) {
+    text-align: $align;
+}
+
+@mixin decoration($decoration) {
+    text-decoration: $decoration;
+}
+
+body, html{
+  font-family: $typo_font_primary;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  color: $color_black
+}
+
+h1{font-size:$typo_h1;}
+h2{font-size:$typo_h2;}
+h3{font-size:$typo_h3;}
+h4{font-size:$typo_h4;}
+h5{font-size:$typo_h5;}
+h6{font-size:$typo_h6;}
+
+h1,h2,h3,h4,h5,h6{
+  margin-top: $space;
+  margin-bottom: $space;
+}
+
+p,a{
+  font-size: $typo_p;
+  margin-top: $space;
+  margin-bottom: $space;
+}
+
+//typo weight
+.fnt_bold{ @include weight($typo_bold) }
+.fnt_normal{ @include weight($typo_normal) }
+.fnt_light{ @include weight($typo_light) }
+.fnt_italic{ @include italic($typo_italic) }
+
+//typo transform
+.fnt_uppercase{ @include transform($typo_uppercase) }
+.fnt_lowercase{ @include transform($typo_lowercase) }
+.fnt_capitalize{ @include transform($typo_capitalize) }
+
+//typo align
+.txt_left{ @include transform($typo_left) }
+.txt_right{ @include transform($typo_right) }
+.txt_center{ @include transform($typo_center) }
+.txt_justify{ @include transform($typo_justify) }
+
+//typo decoration
+.txt_decoration_none{ @include transform($typo_none) }
